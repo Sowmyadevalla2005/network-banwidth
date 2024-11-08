@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandwidth Monitoring Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Bandwidth Monitoring Dashboard</h1>
+    <div id="graph"></div>
+
+    <!-- Hidden element to store the graph data as JSON -->
+    <div id="graph-data" style="display:none;">{{ graphJSON | safe }}</div>
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the graph data from the hidden div element
+            var graphData = document.getElementById('graph-data').textContent;
+    
+            try {
+                // Parse JSON data
+                graphData = JSON.parse(graphData);
+    
+                // Debugging: Log graph data
+                console.log("Parsed Graph Data:", graphData);
+    
+                // Check if data is valid and then render
+                if (graphData && graphData.data && graphData.layout) {
+                    Plotly.newPlot('graph', graphData.data, graphData.layout);
+                } else {
+                    console.error("Graph data is missing required fields.");
+                }
+            } catch (e) {
+                console.error("Failed to parse graph data:", e);
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -47,3 +47,27 @@ network-bandwidth-monitor/
 ├── requirements.txt      # Python dependencies
 └── .gitignore            # Version control ignore rules
 </pre>
+
+## How to Run
+
+### Prerequisites
+- Python 3.7+
+- pip package manager
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/network-bandwidth-monitor.git
+   cd network-bandwidth-monitor
+2.Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+3.Running the Application:
+  Start the Flask server (in one terminal):
+  ```bash
+  python app.py
+  Run the speed test monitor (in another terminal):
+  ```bash
+  python speed_test.py
+  Access the dashboard in your browser:
+  http://localhost:5000

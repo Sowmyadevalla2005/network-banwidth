@@ -31,16 +31,6 @@ The Network Bandwidth Monitor is a simple application that allows users to track
 - **Portable**: Can be packaged as a standalone app.
 
 ## File Structure
-
-To achieve this:
-
-1. Use triple backticks (```) to create a code block
-2. Put your directory structure between the backticks
-3. Use proper ASCII art characters (│ ├── └──)
-4. Make sure there's an empty line before the code block
-5. Keep the alignment exactly as shown
-
-Alternative method using plain text formatting:
 <pre>
 network-bandwidth-monitor/
 │
@@ -57,11 +47,3 @@ network-bandwidth-monitor/
 ├── requirements.txt      # Python dependencies
 └── .gitignore            # Version control ignore rules
 </pre>
-
-Important notes:
-- The structure must be indented exactly as shown
-- Use spaces (not tabs) for alignment
-- The vertical lines (│) and connectors (├── └──) are special characters
-- GitHub Flavored Markdown will preserve the formatting
-
-This will display as a perfect vertical tree structure in your README file.

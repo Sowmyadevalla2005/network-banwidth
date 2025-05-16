@@ -31,17 +31,37 @@ The Network Bandwidth Monitor is a simple application that allows users to track
 - **Portable**: Can be packaged as a standalone app.
 
 ## File Structure
+
+To achieve this:
+
+1. Use triple backticks (```) to create a code block
+2. Put your directory structure between the backticks
+3. Use proper ASCII art characters (│ ├── └──)
+4. Make sure there's an empty line before the code block
+5. Keep the alignment exactly as shown
+
+Alternative method using plain text formatting:
+<pre>
 network-bandwidth-monitor/
 │
-├── __pycache__/          # Python bytecode cache (auto-generated, ignore in git)
+├── __pycache__/          # Python bytecode cache (auto-generated)
 │
 ├── templates/            # Flask HTML templates
 │   └── index.html        # Main dashboard page
 │
 ├── app.py                # Main Flask application
-├── favicon.ico           # Website favicon
+├── favicon.ico           # Website icon
 ├── speed_test.py         # Speed test functionality
-├── speedtest.db          # SQLite database (speed test results)
+├── speedtest.db          # SQLite database
 ├── README.md             # Project documentation
 ├── requirements.txt      # Python dependencies
-└── .gitignore            # Files to ignore in version control
+└── .gitignore            # Version control ignore rules
+</pre>
+
+Important notes:
+- The structure must be indented exactly as shown
+- Use spaces (not tabs) for alignment
+- The vertical lines (│) and connectors (├── └──) are special characters
+- GitHub Flavored Markdown will preserve the formatting
+
+This will display as a perfect vertical tree structure in your README file.
